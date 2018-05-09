@@ -157,7 +157,7 @@ Password: member
 ## ERD:
 > Must include an ERD in any type of notation (Chen, Crow’s Foot notation, or other variants). You should explain all constraints and provide DDL for all tables.
 
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/ERD.png "ERD")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/ERD.png "ERD")
 
 ### ERD table connections:
 * Member contact info and address are both one to one with the member table as all members only need one entry in each of these tables. The emergencyContact table is the same.
@@ -1299,16 +1299,22 @@ CREATE TRIGGER archive_chairPosition
 ## User’s manual:
 > Provide a manual that allows anyone to learn how to operate every aspect of your project. Include screenshots of interfaces and step-by-step instructions. with interfaces and instructions to use your system.
 
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.43.43%20PM.png "FirstPic")
-+ The first page that is presented when entering the website is the login page.
-+ Login using the credentials provided.
-+ After logging in you will be presented with the home page below.
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.46.01%20PM.png "FirstPic")
-+ This page contains all the infomation regarding the user that is logged in.
-+ Depending on what position the user has will allow or deny access to web pages that can be accesed with the top nav bar.
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.03%20PM.png "FirstPic")
-+ This is the roster page. This page contains all members of the fraternity. It can be sorted by selecting Active, Locally Inactive, Nationally Inactive, and Alumni.
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.19%20PM.png "FirstPic")
-+ This is the roster page after selecting Active and hitting the Display Roster button.
-![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.47%20PM.png "FirstPic")
+#### Creating Events
 
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/CreateDASEvent.PNG "CreateDASEvent")
+
++ 5 Chair positions have the availability to add events worth their respective points. Those positions are DAS, Fellowship, Service, Fundraising, and Campus Liason. The chair must be signed in to access their tab for creating events. Log in by clicking the Member Login tab and entering in the proper credentials.
++ Once logged in, click on the create event tab for the respective position. For example, the DAS chair will select CreateDASEvent. 
++ Once here, a form pops up for the chair to fill out. All fields are required to fill out. 
++The event name can be whatever they want to name the event. However, a check will be made before exectuing the query to make sure that event name does not already exist for that semester and year that was selected. If it was found in that semester and year, a popup window will alert the user that the event name already exists for that year and semester and they will need to fill out the form again.
++ The amount of points the event is worth can be typed in or using the arrows on the right to increment or decrement. This field must be a number.
++ The date picker can be written in manually or selected using the date picker. 
++ Finally, the semester can be chosen as either Fall or Spring via the radio buttons with Fall as the default. 
++ Once the form has been filled out, the user can click submit to create the event and have it inserted into the database.
+
+#### info
+
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/info.PNG "Info Page")
+
++ Click on the info tab at the top to access info.php. 
++ Once at info.php, there is nothing to input. Simply scroll down to find the information you need. In the future, these queries will be split up among the proper chair positions and among the position types to show information to the proper individuals using mandatory access control

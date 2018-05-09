@@ -1180,6 +1180,10 @@ CREATE INDEX potential_roster_name ON potential_roster (student_id, first_name, 
 ## Optimization and Tuning:
 > Discuss the topics covered in class, specifically how they impacted the design of your final project.
 
+The main area of optimization in our project was the ***Member* Table**. We originally had a big member table that encompassed the **member**, **member_status**, **member_address**, **member_contact**, and **emergencyContact** tables all in one big table. We realized this was pretty inefficient given that we could break down the member table into better distinct groupings. It didn't necessarily change the normal form of any of the tables but it made more logical sense to break up the member table.
+
+As for future optimization, Phi Sigma Pi would like the ***Member* Table** to be horizontally decomposed into two tables. Both would be identical to the original ***Member* Table** but one would house **current members** and the other would track **alumni  members** and with a newly created view called **Member** that would be the union of the two new tables and function as the original. Horizontally decomposing the ***Member* Table** will make queries more efficient for both types of data once more members are added/graduate since the member table will essentially just keep growing as time progresses.
+
 ## Security setting:
 > Discuss the topics covered in class, specifically how they impacted your final project (e.g. any views you created for your project, including the SQL statement used to create the view; discretionary access control setting, etc.).
 

@@ -1009,6 +1009,8 @@ WHERE
 
 ### 1. Grab percentages of budget items compared to total budget (pie chart)
 #### Expenses in Budget
+> This analytic is especially important to the treasurer who can you this representation as a way to gauge the health of the budget in its current state
+
 ```sql
 SELECT
     B.budget_item_id,
@@ -1063,6 +1065,8 @@ WHERE
 ```
 
 ### 2. Number of Active, Inactive, Nationally Inactive, Alumni members (bar graph)
+> This bar graph is important because it can be a general indicator of a problem if the bar for inactive slowly increases to be a substantial amount. It is also a good snapshot to send to Nationals.
+
 ```sql
 SELECT
     MS.status_name,
@@ -1079,6 +1083,8 @@ ORDER BY
 ```
 
 ### 3. Number of each Event DAS/fellowshipt/etc. (bar graph)
+> This bar graph is especially important to the chairs who are creating events as well as the chapter as a whole. The fraternity does not weight one kind of event as more important as another so there should be about an even number of events for each category. This can also be a good indication of a chair slacking off or their committee not helping out enough.
+
 ```sql
 SELECT
     P.name,
@@ -1096,6 +1102,8 @@ ORDER BY
 ```
 
 ### 4. Most popular merch items by number of orders (top 5) (bar graph)
+> This bar graph is helpful to the PR chairs who design and order merch. Many times, they only order the top 5 or so items they have designed because a large quantity needs to be ordered to drive the price and shipping down. It is also helpful to look at before making future designs.
+
 ```sql
 SELECT
     M.item_name,
@@ -1124,6 +1132,8 @@ LIMIT(5) /* Could insert any number (possibly make this selectable) */
 
 ### 5. Averages of Yes, No, Abstain in votingResults (round 1, 2, 3, or all) (line/pie chart)
 #### Average of each round
+> This chart provides an easy overview during voting periods to see the averages of the way people are voting. It can then be used to help draw the line at what percentage is needed for a potential to pass to the next round.
+
 ```sql
 SELECT
     roundNum,

@@ -1300,3 +1300,8 @@ CREATE TRIGGER archive_chairPosition
 > Provide a manual that allows anyone to learn how to operate every aspect of your project. Include screenshots of interfaces and step-by-step instructions. with interfaces and instructions to use your system.
 
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.43.43%20PM.png "FirstPic")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.46.01%20PM.png "FirstPic")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.03%20PM.png "FirstPic")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.19%20PM.png "FirstPic")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.47%20PM.png "FirstPic")
+https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.19%20PM.png

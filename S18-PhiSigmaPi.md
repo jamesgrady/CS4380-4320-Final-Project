@@ -1158,6 +1158,12 @@ FROM
 ## Normalization:
 > Provide an in-depth discussion of normalization, dependency preservation, and de-normalization with respect to your project.
 
+Our DBMS as a whole is in 3rd normal form. However, all tables minus the **member**, **chairPosition**, and **archive_chairPosition** are in BCNF. In terms of dependency preservation our project is dependency preserving because each table has their own set of dependencies and the only ones that transcend one table are preserved in relation tables and weak entities.
+
+The member table as it is, is in 3NF because of the *pawprint*, *first_name*, and *last_name* attributes. Ideally these attributes would have a `UNIQUE(pawprint,first_name,last_name)` constraint but we decided along with our client that we should check for this constraint on the front-end and allow it to be edited/corrected but still create a new user/member in the system.
+
+The **chairPostion** and **archive_chairPosition** tables are in 3NF because the *position_id* attribute of **archive_chairPosition** technically references the **chairPostion** table's *position_id* attribute without a foreign key constraint. The client wanted the **archive_chairPosition** table to stand alone from the **chairPostion** table, but we can still technically access the data such as *position_name* or *position_type* through a query even though this won't be used too often. In the future the client might decide to make this constraint or connection which shouldn't be too hard of a fix.
+
 ## Indexing:
 > Give an in-depth discussion of indexing as it relates to your project
 including how/why you created specific additional indexes. Provide the associated SQL statement for creation of those indexes.

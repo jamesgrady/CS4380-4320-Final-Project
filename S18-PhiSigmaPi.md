@@ -325,6 +325,8 @@ CREATE TABLE class_roster (
 > List at least 20 useful queries (with justification) for your system in natural language and SQL.
 
 ### 1. ALL Member info based on id
+> This query is necessary because everyone should be able to see their member info on the dashboard page as well as be able to update this information should something change.
+
 ```sql
 SELECT
     M.student_id,
@@ -352,6 +354,8 @@ WHERE
 ```
 
 ### 2. memberDues for member based on id
+> This query is necessary because each member should have full visibility as to how much they have owed and what left they have to pay.
+
 ```sql
 SELECT
     MD.amount_owed,
@@ -367,6 +371,8 @@ WHERE
 ```
 
 ### 3. member_paymentPlan for member based on id
+> This query is useful to members who wish to see their payment plan and to members who hold chair positions.
+
 ```sql
 SELECT
     DPP.last_amount_paid,
@@ -384,6 +390,8 @@ WHERE
 ```
 
 ### 4. All member points based on id
+> Each member needs to be able to see the amount of points they have because if they do not meet their quota, they will be charged a fine.
+
 ```sql
 SELECT
     PT.name AS point_type,
@@ -405,6 +413,8 @@ GROUP BY
 ```
 
 ### 5. All member emergency contact info
+> This is important for each member to see in case they need to update their information. Before this application, new emergency contact info sheets were passed out each semester. Now, this information only needs to be resubmitted if there is a change in the data.
+
 ```sql
 SELECT
     EC.last_name,
@@ -431,6 +441,8 @@ WHERE
 ```
 
 ### 6. All merch orders for member based on id
+> Each member will also see the specific merch items as well as the details associated with each item on their dashboard. This is good to see because it reminds members how much they will owe for their merch.
+
 ```sql
 SELECT
     MCH.item_name,
@@ -452,6 +464,8 @@ WHERE
 ### All sports teams for member based on id
 
 #### 7. Active Teams
+> Each member should have the ability to see which teams they are apart of.
+
 ```sql
 SELECT
     RS.sport_name,
@@ -476,6 +490,8 @@ WHERE
 ```
 
 #### 8. Old Teams
+> Can be used to award the most active members.
+
 ```sql
 SELECT
     RS.sport_name,
@@ -500,6 +516,8 @@ WHERE
 ```
 
 ### 9. Roster Page Query (Grab all members and basic contact information)
+> Useful for chair positions that need to contact all members via email, phone number, etc.
+
 ```sql
 SELECT
     M.pawprint,
@@ -514,6 +532,8 @@ FROM
 ```
 
 ### 10. All member points grouped by student_id and then point type (name, point_type, num_of_point per type)
+> Useful for members who wish to see how many points they have. Points are very important to being a Phi Sigma Pi member.
+
 ```sql
 SELECT
     m.student_id,
@@ -546,6 +566,8 @@ ORDER BY (M.student_id)
 ```
 
 ### 11. All members with chair positions
+> This is a useful query because it is important to know who the leaders are in the fraternity as many times you need to reach out to them.
+
 ```sql
 SELECT
     M.first_name,
@@ -561,6 +583,8 @@ ORDER BY (CP.position_id)
 ```
 
 ### 12. All payment plans for each member
+> This query is useful for the treasurer to see payment plans of all members.
+
 ```sql
 SELECT
     MD.student_id,
@@ -581,6 +605,8 @@ WHERE
 ```
 
 ### 13. All Merch orders that have not yet been completed
+> This is helpful for the organization when merch items are left over and you need to figure out who hasn’t completed their orders yet… no more searching through google docs!
+
 ```sql
 SELECT
     M.first_name,
@@ -599,6 +625,8 @@ WHERE
 ```
 
 ### 14. Print out a family with roster
+> This is useful for members who want to see who is in their family.
+
 ```sql
 SELECT
     M.student_id,
@@ -619,6 +647,8 @@ WHERE
 ```
 
 ### 15. Number of members that attended each event
+> This is useful to chair positions who are in charge of planning events so they can gauge interest for future events as to what might be successful
+
 ```sql
 SELECT
     E.event_id,
@@ -648,6 +678,8 @@ WHERE
 ```
 
 ### 16. Display budget info for specific chair
+> Each member with a chair position should have the ability to see their budget.
+
 ```sql
 SELECT
     CP.position_name,
@@ -709,6 +741,8 @@ LIMIT(1)
 ```
 
 ### 17. Display class rosters
+> Being able to see entire class rosters is important to the fraternity as a whole as many times you do separate things with just your class before joining the entire fraternity. Of course, everyone usually remembers everyone in their class after a while, but this can also be helpful data when reporting back to Nationals with new members.
+
 ```sql
 SELECT
     CR.student_id,
@@ -728,6 +762,8 @@ WHERE
 ```
 
 ### 18. All upcoming events for a specific point_type/chairPosition
+> This query is useful for members with a chair position who run events and would like to see a list of their events for organizational purposes.
+
 ```sql
 SELECT
     E.event_id,
@@ -746,6 +782,8 @@ WHERE
 ```
 
 ### 19. Most Active Member (the member with the most points) (Top 5 to see more)
+> This query is important because PSP loves to promote members who are constantly active and they do giveaways at the end of the semester to these individuals.
+
 ```sql
 SELECT
     M.student_id,
@@ -788,6 +826,8 @@ WHERE
 ```
 
 ### 20. All potential members (Roster of potential members)
+> All potential members is important for both reporting to nationals as well as helping the active brothers to get to know the potential members
+
 ```sql
 SELECT
     PR.student_id,
@@ -800,6 +840,8 @@ FROM
 ```
 
 ### 21. All Potential Members that passed a specific Round (got more than 50% yes)
+> It is important to know which potential members have made it passed voting so far so that the chapter doesn’t vote on someone who is no longer being considered for initiation
+
 ```sql
 WITH percentage AS (
     SELECT

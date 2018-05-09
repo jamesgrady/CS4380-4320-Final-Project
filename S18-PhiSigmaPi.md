@@ -8,7 +8,7 @@
 ## Introduction:
 > Discuss the application domain, your client, the data, and any potential for product commercialization. Also include the URL for your project as well as sample (working) usernames and passwords for each type of user in your system.
 
-Our group has been tasked with creating a functioning website to easily access and manipulate data for the Mizzou chapter of Phi Sigma Pi National Honor Fraternity. Currently, many different tools are being used by the fraternity such as OrgSync, Facebook, Google Docs, and random Excel sheets. Hunter has gathered all the necessary attributes we need to create dummy data for the fraternity since we will need to keep the actual fraternity member data private.
+Our group has been tasked with creating a functioning website to easily access and manipulate data for the Mizzou chapter of Phi Sigma Pi National Honor Fraternity. Currently, many different tools are being used by the fraternity such as OrgSync, Facebook, Google Docs, and random Excel sheets. Hunter has gathered all the necessary attributes we need to create dummy data for the fraternity since we will need to keep the actual fraternity member data private. There isn't really any potential for product commercialization, however, the application could be manipulated to account for other school chapters or even Nationals.
 
 **URL:** [https://web.dsa.missouri.edu/~s18group03/](https://web.dsa.missouri.edu/~s18group03/index.php)
 

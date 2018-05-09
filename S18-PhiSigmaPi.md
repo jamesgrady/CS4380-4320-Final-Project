@@ -1313,6 +1313,15 @@ CREATE TRIGGER archive_chairPosition
 ### Form Handling
 + Used pg_prepare and pg_execute to prevent SQL injection attacks and illegitimate queries
 + Checked event name with semester and year for creating events before running query to make sure wouldn't duplicate event names for the same semester and year
+> Example statements for checking for duplicate event name for semester/year
+ $result1 = pg_prepare($db, "checkEventName", "SELECT * FROM events WHERE title = $1 AND date_part('year', event_date) = $2 AND semester = $3");
+$result1 = pg_execute($db, "checkEventName", array($nameCheck, $year, $semester));
+>Example statements for inserting into events table. The only difference between chair positions will be the first two arguments which reflect the position_id and point_type for the event being created
+$result = pg_prepare($db, "createDAS", "INSERT INTO events (position_id, point_type, num_of_points, title, event_date, semester)
+                    VALUES (15, 1, $1, $2, $3, $4)");
+if($result){
+          $result = pg_execute($db, "createDAS", array($point, $nameCheck, $date, $semester));
+ }
 
 ## User’s manual:
 > Provide a manual that allows anyone to learn how to operate every aspect of your project. Include screenshots of interfaces and step-by-step instructions. with interfaces and instructions to use your system.

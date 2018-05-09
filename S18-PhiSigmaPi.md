@@ -1304,6 +1304,7 @@ CREATE TRIGGER archive_chairPosition
 + After logging in you will be presented with the home page below.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.46.01%20PM.png "FirstPic")
 + This page contains all the infomation regarding the user that is logged in.
++ Use the logout button to logout of the current user and to access the login page
 + Depending on what position the user has will allow or deny access to web pages that can be accesed with the top nav bar.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.03%20PM.png "FirstPic")
 + This is the roster page. This page contains all members of the fraternity. It can be sorted by selecting Active, Locally Inactive, Nationally Inactive, and Alumni.
@@ -1311,7 +1312,7 @@ CREATE TRIGGER archive_chairPosition
 + This is the roster page after selecting Active and hitting the Display Roster button.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.47%20PM.png "FirstPic")
 + This is the analytics page.
-+ There are not actions on this page. It is for viewing analytics about PSP.
++ There are no actions on this page. It is for viewing analytics about PSP.
 
 #### Creating Events
 

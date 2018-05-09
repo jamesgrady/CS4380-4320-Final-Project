@@ -23,7 +23,7 @@ test123   ||  another
 ## ERD:
 > Must include an ERD in any type of notation (Chen, Crow’s Foot notation, or other variants). You should explain all constraints and provide DDL for all tables.
 
-![alt text](../../../Downloads/ERD.png "ERD")
+![alt text](https://github.com/HGinther/CS4830-FinalProject/ERD.png "ERD")
 
 ### ERD table connections:
 * Member contact info and address are both one to one with the member table as all members only need one entry in each of these tables. The emergencyContact table is the same.

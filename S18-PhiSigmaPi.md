@@ -1300,8 +1300,15 @@ CREATE TRIGGER archive_chairPosition
 > Provide a manual that allows anyone to learn how to operate every aspect of your project. Include screenshots of interfaces and step-by-step instructions. with interfaces and instructions to use your system.
 
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.43.43%20PM.png "FirstPic")
++ The first page that is presented when entering the website is the login page.
++ Login using the credentials provided.
++ After logging in you will be presented with the home page below.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.46.01%20PM.png "FirstPic")
++ This page contains all the infomation regarding the user that is logged in.
++ Depending on what position the user has will allow or deny access to web pages that can be accesed with the top nav bar.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.03%20PM.png "FirstPic")
++ This is the roster page. This page contains all members of the fraternity. It can be sorted by selecting Active, Locally Inactive, Nationally Inactive, and Alumni.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.19%20PM.png "FirstPic")
++ This is the roster page after selecting Active and hitting the Display Roster button.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.47%20PM.png "FirstPic")
-https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.47.19%20PM.png
+

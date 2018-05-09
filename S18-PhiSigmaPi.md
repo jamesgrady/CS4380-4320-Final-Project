@@ -14,10 +14,144 @@ Our group has been tasked with creating a functioning website to easily access a
 
 **Sample Credentials:**
 ```
-username  ||  password
-----------------------
-test324   ||  something
-test123   ||  another
+President
+
+Student ID: 10000001
+Pawprint: aaaaaa
+Password: president
+
+Vice President
+
+Student ID: 10000002
+Pawprint: bbbbbb
+Password: vicepresident
+
+Recording Secretary
+
+Student ID: 10000003
+Pawprint: cccccc
+Password: sec1
+
+Corresponding Secretary
+
+Student ID: 10000004
+Pawprint: dddddd
+Password: sec2
+
+Treasurer
+
+Student ID: 10000005
+Pawprint: eeeeee
+Password: treasurer
+
+Recruitment Chair
+
+Student ID: 10000006
+Pawprint: ffffff
+Password: recruitment
+
+Initiate Advisor
+
+Student ID: 10000007
+Pawprint: gggggg
+Password: initiate
+
+Historian
+
+Student ID: 10000008
+Pawprint: hhhhhh
+Password: historian
+
+Parliamentarian
+
+Student ID: 10000009
+Pawprint: iiiiii
+Password: parliament
+
+Brother at Large
+
+Student ID: 10000010
+Pawprint: jjjjjj
+Password: broatlarge
+
+Fundraising Chair
+
+Student ID: 10000011
+Pawprint: kkkkkk
+Password: funds
+
+Alumni Chair
+
+Student ID: 10000012
+Pawprint: llllll
+Password: alumni
+
+Philanthropy Chair
+
+Student ID: 10000013
+Pawprint: mmmmmm
+Password: philanthropy
+
+Service Chair
+
+Student ID: 10000014
+Pawprint: nnnnnn
+Password: service
+
+DAS Chair
+
+Student ID: 10000015
+Pawprint: oooooo
+Password: das
+
+Fellowship Chair
+
+Student ID: 10000016
+Pawprint: pppppp
+Password: fellowship
+
+Risk Management Chair
+
+Student ID: 10000017
+Pawprint: qqqqqq
+Password: risk
+
+Rec Sports Chair (1)
+
+Student ID: 10000018
+Pawprint: rrrrrr
+Password: rec1
+
+Rec Sports Chair (2)
+
+Student ID: 10000019
+Pawprint: ssssss
+Password: rec2
+
+PR Chair (1)
+
+Student ID: 10000020
+Pawprint: tttttt
+Password: pr1
+
+PR Chair (2)
+
+Student ID: 10000021
+Pawprint: uuuuuu
+Password: pr2
+
+Campus Liaison
+
+Student ID: 10000022
+Pawprint: vvvvvv
+Password: liaison
+
+Regular Member
+
+Student ID: 10000023
+Pawprint: wwwwww
+Password: member
+
 ```
 
 ## ERD:

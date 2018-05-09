@@ -1326,7 +1326,7 @@ CREATE TRIGGER archive_chairPosition
 + $result1 = pg_prepare($db, "checkEventName", "SELECT * FROM events WHERE title = $1 AND date_part('year', event_date) = $2 AND semester = $3");
 + $result1 = pg_execute($db, "checkEventName", array($nameCheck, $year, $semester));
 
-+ >Example statements for inserting into events table. The only difference between chair positions will be the first two arguments which reflect the position_id and point_type for the event being created
+> Example statements for inserting into events table. The only difference between chair positions will be the first two arguments which reflect the position_id and point_type for the event being created
 + $result = pg_prepare($db, "createDAS", "INSERT INTO events (position_id, point_type, num_of_points, title, event_date, semester)
                     VALUES (15, 1, $1, $2, $3, $4)");
 if($result){

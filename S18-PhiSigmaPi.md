@@ -1168,6 +1168,8 @@ The **chairPostion** and **archive_chairPosition** tables are in 3NF because the
 > Give an in-depth discussion of indexing as it relates to your project
 including how/why you created specific additional indexes. Provide the associated SQL statement for creation of those indexes.
 
+> We chose to index on these tables because they were referenced a lot in our queries. If the use of our application expands to the use of other school chapters or for the user of Nationals, there would be much more data and these indexes would prove to be very efficient. Right now, with just a small set of data for just our chapter, it's not too big of a difference in efficiency but every millisecond counts!
+
 ### member Table (student_id, first_name, last_name)
 ```sql
 CREATE INDEX member_name ON member (student_id, first_name, last_name);

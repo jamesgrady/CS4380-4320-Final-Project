@@ -1300,6 +1300,10 @@ CREATE TRIGGER archive_chairPosition
   EXECUTE PROCEDURE position_archive();
 ```
 
+### Form Handling
++ Used pg_prepare and pg_execute to prevent SQL injection attacks and illegitimate queries
++ Checked event name with semester and year for creating events before running query to make sure wouldn't duplicate event names for the same semester and year
+
 ## User’s manual:
 > Provide a manual that allows anyone to learn how to operate every aspect of your project. Include screenshots of interfaces and step-by-step instructions. with interfaces and instructions to use your system.
 ![alt text](https://github.com/HGinther/CS4830-FinalProject/blob/master/Pictures/Screen%20Shot%202018-05-09%20at%201.43.43%20PM.png "FirstPic")

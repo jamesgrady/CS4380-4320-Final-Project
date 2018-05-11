@@ -10,7 +10,7 @@
 
 Our group has been tasked with creating a functioning website to easily access and manipulate data for the Mizzou chapter of Phi Sigma Pi National Honor Fraternity. Currently, many different tools are being used by the fraternity such as OrgSync, Facebook, Google Docs, and random Excel sheets. Hunter has gathered all the necessary attributes we need to create dummy data for the fraternity since we will need to keep the actual fraternity member data private. There isn't really any potential for product commercialization, however, the application could be manipulated to account for other school chapters or even Nationals.
 
-**URL:** [https://web.dsa.missouri.edu/~s18group03/](https://web.dsa.missouri.edu/~s18group03/index.php)
+**URL:** [https://web.dsa.missouri.edu/~s18group03/login.php](https://web.dsa.missouri.edu/~s18group03/login.php)
 
 **Sample Credentials:**
 ```

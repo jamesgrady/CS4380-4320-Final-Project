@@ -24,4 +24,4 @@ Sprint Timebox: 2 Weeks
 3. Roster View Functionality
 4. Analytics Functionality - Using Google Charts
 5. Project Report
-
+6. Login Credential Creation

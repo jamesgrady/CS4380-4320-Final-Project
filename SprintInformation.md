@@ -2,6 +2,8 @@
 
 Sprint Timebox: 2 Weeks
 
+The list here is not exhaustive off all the work completed during the sprint, but rather is meant to provide a general guide to the tasks accomplished and functionalities implemented during each sprint.
+
 ## Sprint 1
 
 1. Database Design and ERD Creation

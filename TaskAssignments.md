@@ -1,35 +1,34 @@
 # Breakdown of Assignments Through Project
 
-## Collaborations:
+## Collaborations
 
-Entity Relationship Diagram, 
-Contents of /fragments/ Directory (header.php, footer.php), 
-Web Design and Style, 
+1. Entity Relationship Diagram
+2. Contents of /fragments/ Directory (header.php, footer.php) 
+3. Web Design and Style 
+4. Project Report
 
-## Hunter Ginther:
+## Hunter Ginther
 
-Table Creation, 
-Analytic Queries, 
-Report, 
-User Manual, 
-Creation of dummy data to populate database, 
+1. Table Creation
+2. Analytic Queries 
+3. User Manual 
+4. Creation of dummy data to populate database 
 
-## Andrew Pizzullo:
+## Andrew Pizzullo
 
-Create_______Event.php pages
-User Manual
-Tabular Display of Data Obtained Through Queries Written by Hunter Ginther (info.php)
+1. Create---Event.php Pages
+2. Tabular Display of Data Obtained Through Queries Written by Hunter Ginther (info.php)
 
 ## Cody Mcilvaine
 
-Member Dashboard (index.php), 
-Use of Google Charts API to display results of analysis obtained through queries written by Hunter Ginther (analytics.php), 
-User Manual, 
+1. Member Dashboard (index.php) 
+2. Use of Google Charts API to display results of analysis obtained through queries written by Hunter Ginther (analytics.php) 
+3. User Manual 
 
 ## James Grady
 
-Login/Logout Functionality (login.php, logout.php), 
-Register User Functionality (register.php), 
-Security (Mandatory Access Control managed through PHP in front end), 
-Roster Functionality (roster.php), 
-Creation of Sample Login Credentials, 
+1. Login/Logout Functionality (login.php, logout.php)
+2. Register User Functionality (register.php)
+3. Security (Mandatory Access Control managed through PHP in front end) 
+4. Roster Functionality (roster.php)
+5. Creation of Sample Login Credentials

@@ -30,6 +30,5 @@
 
 1. Login/Logout Functionality (login.php, logout.php)
 2. Register User Functionality (register.php)
-3. Security (Mandatory Access Control managed through PHP in front end) 
-4. Roster Functionality (roster.php)
-5. Creation of Sample Login Credentials
+3. Roster Functionality (roster.php)
+4. Creation of Sample Login Credentials

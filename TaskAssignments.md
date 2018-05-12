@@ -18,6 +18,7 @@
 
 1. Create---Event.php Pages
 2. Tabular Display of Data Obtained Through Queries Written by Hunter Ginther (info.php)
+3. Database Normalization
 
 ## Cody Mcilvaine
 
